@@ -13,4 +13,4 @@ COPY target/service.jar /usr/src/app/
 
 CMD ["java", "-Xmx256m", "-jar", "/usr/src/app/service.jar"]
 
-EXPOSE 3000
+EXPOSE 8080 

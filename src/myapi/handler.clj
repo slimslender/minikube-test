@@ -43,6 +43,6 @@
        (ok pizza)))))
 
 (defn ^:skip-aot -main [& args]
-  (standalone/serve app {:port 3000
+  (standalone/serve app {:port 8080
                          :join? true
                          :open-browser? false}))
