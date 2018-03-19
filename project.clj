@@ -1,4 +1,4 @@
-(defproject minikube-test "0.1.0-SNAPSHOT"
+(defproject minikube-test "0.1.0"
   :description "FIXME: write description"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [metosin/compojure-api "1.1.11"]
@@ -8,6 +8,14 @@
   :jar-name "service.jar"
 
   :main myapi.handler
+
+  :release-tasks [["clean"]
+                  ["change" "version" "leiningen.release/bump-version" "release"]
+                  ["metajar"]
+                  ["container" "build"]
+                  ["container" "push"]
+                  ["vcs" "commit"]
+                  ["vcs" "push"]]
 
   :container {:name "minikube-test-clj"
               :dockerfile "/docker"
