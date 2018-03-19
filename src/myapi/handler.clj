@@ -27,6 +27,9 @@
    (GET "/info" []
      (ok))
 
+   (GET "/" []
+     (ok))
+
    (context "/api" []
      :tags ["api"]
 
