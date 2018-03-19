@@ -1,4 +1,4 @@
-(defproject minikube-test "0.6.12-SNAPSHOT"
+(defproject minikube-test "0.6.13-SNAPSHOT"
   :description "FIXME: write description"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [metosin/compojure-api "1.1.11"]
