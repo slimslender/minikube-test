@@ -21,6 +21,12 @@
                    :description "Compojure Api example"}
             :tags [{:name "api", :description "some apis"}]}}}
 
+   (GET "/health" []
+     (ok))
+
+   (GET "/info" []
+     (ok))
+
    (context "/api" []
      :tags ["api"]
 
