@@ -15,7 +15,7 @@
 (def app
   (api
    {:swagger
-    {:ui "/"
+    {:ui "/apidocs"
      :spec "/swagger.json"
      :data {:info {:title "My-api"
                    :description "Compojure Api example"}
