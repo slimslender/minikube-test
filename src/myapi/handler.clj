@@ -15,9 +15,10 @@
 (def app
   (api
    {:swagger
-    {:ui "/apidocs"
+    {:ui "/"
      :spec "/swagger.json"
-     :data {:info {:title "My-api"
+     :data {:basePath "/ANBD24ZEC/production/slimslender/minikube-test"
+            :info {:title "My-api"
                    :description "Compojure Api example"}
             :tags [{:name "api", :description "some apis"}]}}}
 
@@ -25,9 +26,6 @@
      (ok))
 
    (GET "/info" []
-     (ok))
-
-   (GET "/" []
      (ok))
 
    (context "/api" []
