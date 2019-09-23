@@ -1,6 +1,6 @@
 (defproject minikube-test-clj "0.6.51-SNAPSHOT"
   :description "FIXME: write description"
-  :dependencies [[org.clojure/clojure "1.10.0"]
+  :dependencies [[org.clojure/clojure "1.10.1"]
                  [metosin/compojure-api "1.1.11"]
                  [ring-server "0.5.0"]]
   :ring {:handler my-api.handler/app}
